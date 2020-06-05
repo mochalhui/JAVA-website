@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Learning</title>
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/forum.css" type="text/css">
+    <link rel="stylesheet" href="../css/Java%20write.css" type="text/css">
+    <link rel="stylesheet" href="../css/layui/css/layui.css"  media="all">
+    <script src="../css/layui/layui.js" charset="utf-8"></script>
+
+</head>
+<div class="up">
+    <img class="logo1" src="../img/logo1.png">
+</div>
+<div class="navigation">
+    <a href="../html/home.html">Home</a>
+    <a href="../html/Course.html">Course</a>
+    <a href="../html/Forum.html">Forum</a>
+    <a href="../html/Assessment.html">Assessment</a>
+    <a href="../html/Homepage.html">Homepage</a>
+</div>
+
+<div class="content"></div>
+
+<div class="forum_navigation">
+    <a href="../html/Forum.html">Java Blog</a>
+    <a href="../html/Forum%20Q&A.html">Q&A</a>
+    <a href="../html/Forum%20label.html">Label</a>
+</div>
+
+
+<div class="write">
+    <input type="text" placeholder="Please enter an title">
+</div>
+
+<div class="write1">
+    <input type="text">
+</div>
+
+<div class="label">
+    <p>Labels(separated by commas or spaces)</p>
+
+</div>
+<div class="label1">
+    <input type="text" placeholder="Add related tags">
+</div>
+
+<div class="choose">
+    <p>Post to:</p>
+</div>
+<div class="sel">
+<select name="cars">
+    <option value="Please select a section" selected>Please select a section </option>
+    <option value="blog">Java Blog</option>
+    <option value="q&a" >Q&A</option>
+</select>
+</div>
+    <div class="layui-upload">
+        <p style="position:absolute;top:180px;right: 180px"><img src="../img/write.jpg"width="200"height="120"></p>
+        <button type="button" class="layui-btn" id="test1" style="border-radius:10px;
+        color: white;
+        background-color:#FE8332;
+        position: absolute;
+        height: 30px;
+        width:200px;
+        top:320px;
+        right:180px;
+        font-size:20px;">Cover picture</button>
+
+        <button type="button" class="layui-btn" style=" border-radius:10px;
+                color: white;
+                background-color:#FE8332;
+                position: absolute;
+                height: 30px;
+                width:200px;
+                top:580px;
+                right:180px;
+                font-size:20px;">Release</button>
+        <div class="layui-upload-list">
+            <img class="layui-upload-img" id="demo1">
+            <p id="demoText"></p>
+        </div>
+    </div>
+<script>
+    layui.use('upload', function() {
+        var $ = layui.jquery
+            , upload = layui.upload;
+
+        var uploadInst = upload.render({
+            elem: '#test1'
+            , url: 'https://httpbin.org/post'
+            , before: function (obj) {
+                obj.preview(function (index, file, result) {
+                    $('#demo1').attr('src', result);
+                });
+            }
+            , done: function (res) {
+                if (res.code > 0) {
+                    return layer.msg('fail');
+                }
+            }
+            , error: function () {
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">fail败</span> <a class="layui-btn layui-btn-xs demo-reload">repeat</a>');
+                demoText.find('.demo-reload').on('click', function () {
+                    uploadInst.upload();
+                });
+            }
+        });
+    })
+</script>
+
+</div>
+</html>

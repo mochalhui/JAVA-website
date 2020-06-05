@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Learning</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link href="../css/Course.css" type="text/css"  rel="stylesheet"/>
+    <!link rel="stylesheet" href="../css/layui/css/layui.css"  type="text/css">
+
+</head>
+<body>
+<div class="up">
+    <img class="logo1" src="../img/logo1.png">
+</div>
+<div class="navigation">
+    <a href="../html/home.html">Home</a>
+    <a href="../html/Course.html" style="background-color: gray;border-bottom-style: solid;border-bottom-color: black">Course</a>
+    <a href="../html/Forum.html">Forum</a>
+    <a href="../html/Assessment.html">Assessment</a>
+    <a href="../html/Homepage.html" >Homepage</a>
+</div>
+<div class="content">
+    <div class="left_navigation">
+        <ul id="list">
+            <li class="current_li" onclick="left()">Introduction to Java</li>
+            <li onclick="left()">Java development environmert</li>
+            <li onclick="left()">Java basic syntax</li>
+            <li onclick="left()">Java objects and classes</li>
+            <li onclick="left()">Java swings</li>
+            <li onclick="left()">Java Gui</li>
+            <li onclick="left()">Java File IN/OUT</li>
+            <li onclick="left()">Java OO</li>
+            <li onclick="left()">Java Switch case</li>
+            <li onclick="left()">Java String</li>
+            <li onclick="left()">Java Math</li>
+            <li onclick="left()">Java StringBuffer</li>
+            <li onclick="left()">Java Scanner</li>
+            <li onclick="left()">Java Override</li>
+
+
+        </ul>
+    </div>
+    <div class="right">
+        <div class="hd" id="hd">
+            <span class="current" onclick="right()">Video learning</span>
+            <span onclick="right()">Graphic learning</span>
+            <span onclick="right()">Online editor</span>
+        </div>
+        <div class="bd" id="bd">
+            <div class="current">
+                <video controls>
+                    <source src="" type="video/mp4">
+                </video>
+        </div>
+            <div>
+                <h2>Java Introduction</h2>
+                <p>I will try to guide you people through this tutorial effectively, and quickly. </p>
+                <p>JAVA is a very complex language with a lot to learn. </p>
+                <p>These tutorials do not assume any responsibility for teaching you correctly, but I will try to make it clear, and leave all mistakes out.</p>
+                <p>If you are already familiar with JAVA, you should skip ahead to later sections.</p>
+                <p>This section is just a note. Next we will start getting you welcome with the JAVA language.</p>
+                <hr>
+                <pre class="layui-code" lay-height="150px">
+Lay.fn.event = function(modName, events, params){
+  var that = this, result = null, filter = events.match(/\(.*\)$/)||[];
+  var set = (events = modName + '.'+ events).replace(filter, '');
+  var callback = function(_, item){
+    var res = item &amp;&amp; item.call(that, params);
+    res === false &amp;&amp; result === null &amp;&amp; (result = false);
+  };
+  layui.each(config.event[set], callback);
+  filter[0] &amp;&amp; layui.each(config.event[events], callback);
+  return result;
+};
+      </pre>
+            </div>
+            <div>
+                <h3 class="code">Source Code</h3>
+                <h3 class="results">Results</h3>
+                <p class="source_code"></p>
+                <p class="results_code"></p>
+                <button type="button" class="layui-btn layui-btn-danger layui-btn-radius">Run</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+    function right() {
+        var spans = document.querySelectorAll('#hd span');
+
+        var divs =  document.querySelectorAll('#bd div');
+
+        var i = 0 ; len = spans.length;
+        for(; i < len ; i++) {
+            var span = spans[i];
+            span.setAttribute('suoyin', i);
+            span.onclick = function () {
+                for (i = 0; i < len; i++) {
+                    spans[i].className = '';
+                }
+                this.className = 'current';
+                var suoyin = parseInt(this.getAttribute('suoyin'));
+                var divlen = divs.length;
+                for (i = 0; i < divlen; i++) {
+                    divs[i].className = '';
+                }
+                divs[suoyin].className = 'current';
+            }
+        }
+    }
+
+</script>
+<script type="text/javascript">
+    function left(){
+        var lis=document.querySelectorAll('#list li');
+
+        var j=0;len1=lis.length;
+        for(;j<len1;j++){
+            var li=lis[j];
+
+            li.onclick=function () {
+                for(j=0;j<len1;j++){
+                    lis[j].className='';
+
+                }
+                this.className='current_li';
+
+            }
+        }
+    }
+</script>
+<script src="../css/layui/layui.js" charset="utf-8">
+
+    layui.use('code', function(){
+
+        layui.code();
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Learning</title>
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/Assessment.css" type="text/css">
+    <script type="text/javascript" src="../js/Assessment.js"></script>
+
+</head>
+<body>
+<div class="up">
+    <img class="logo1" src="../img/logo1.png">
+</div>
+
+<div class="navigation">
+    <a href="../html/home.html">Home</a>
+    <a href="../html/Course.html">Course</a>
+    <a href="../html/Forum.html">Forum</a>
+    <a href="../html/Assessment.html"style="background-color: gray;border-bottom-style: solid;border-bottom-color: black">Assessment</a>
+    <a href="../html/Homepage.html">Homepage</a>
+</div>
+ <div class="content">
+  <div id="Page1">
+        <div class="sidebar" id="Selection">
+            <ul>
+                <li class="select_sidebar" id="select1" style="background-color: gray;border-left: black solid"><a onclick="jumpHelper1(1)">Starting Testing</a></li>
+                <li class="select_sidebar" id="select2"><a onclick="jumpHelper1(2)">Grade</a></li>
+                <li class="select_sidebar" id="select3"><a onclick="jumpHelper1(3)">Library</a></li>
+            </ul>
+        </div>
+
+        <div class="Page1-1" id="Page1-1">
+            <div id="Exam">
+                <p class="chapter" id="c1">Chapter 1   Basic Syntax</p>
+                <p class="chapter" id="c2">Chapter 2   Objects and Class</p>
+                <p class="chapter" id="c3">Chapter 3   Loop Structure</p>
+                <p class="chapter" id="c4">Chapter 4   Conditional Statements</p>
+                <p class="chapter" id="c5">Chapter 5   Array</p>
+                <p class="chapter" id="c6">Chapter 6   Interface</p>
+
+                <button class="button_2" id="b1" onclick="jumpHelper2();time_fun()"><span>Start</span></button>
+                <button class="button_2" id="b2" onclick="jumpHelper2();time_fun()"><span>Start</span></button>
+                <button class="button_2" id="b3" onclick="jumpHelper2();time_fun()"><span>Start</span></button>
+                <button class="button_2" id="b4" onclick="jumpHelper2();time_fun()"><span>Start</span></button>
+                <button class="button_2" id="b5" onclick="jumpHelper2();time_fun()"><span>Start</span></button>
+                <button class="button_2" id="b6" onclick="jumpHelper2();time_fun()"><span>Start</span></button>
+            </div>
+
+            <div id="grade">
+                <table>
+                    <th>Chapter</th>
+                    <th>The number of tests</th>
+                    <th>Time-consuming（min)</th>
+                    <th>Grade(total 100)</th>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>88</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="library">
+                <p class="chapter" id="c7">Chapter 1   Basic Syntax</p>
+                <p class="chapter" id="c8">Chapter 2   Objects and Class</p>
+                <p class="chapter" id="c9">Chapter 3   Loop Structure</p>
+                <p class="chapter" id="c10">Chapter 4   Conditional Statements</p>
+                <p class="chapter" id="c11">Chapter 5   Array</p>
+                <p class="chapter" id="c12">Chapter 6   Interface</p>
+
+                <button class="button_2" id="b7"  onclick="jumpHelper7()"><span>Check</span></button>
+                <button class="button_2" id="b8"  onclick="jumpHelper7()"><span>Check</span></button>
+                <button class="button_2" id="b9"  onclick="jumpHelper7()"><span>Check</span></button>
+                <button class="button_2" id="b10" onclick="jumpHelper7()"><span>Check</span></button>
+                <button class="button_2" id="b11" onclick="jumpHelper7()"><span>Check</span></button>
+                <button class="button_2" id="b12" onclick="jumpHelper7()"><span>Check</span></button>
+            </div>
+        </div>
+</div>
+
+     <div id="Page2">
+
+         <h1 id="mytime">00:00:00</h1>
+
+         <div id="Q1">
+         <div class="number">
+             <p class="Question">[1]</p>
+         </div>
+         <div class="sheet">
+       <p class="Question">Which of the following is the correct identifier?</p>
+        <label>
+            <br>
+            <input type="radio" name="answer" value="man" class="an">  3com
+            <br><br>
+            <input type="radio" name="answer" value="women" class="an">  import
+            <br><br>
+            <input type="radio" name="answer" value="man" id="true1" onclick="count()" class="an">  that
+            <br><br>
+            <input type="radio" name="answer" value="women" class="an">  this
+        </label>
+         </div>
+         <div class="next">
+             <button class="button_2" onclick="jumpHelper3()">Next</button>
+         </div>
+         </div>
+
+    <div id="Q2">
+        <div class="number">
+            <p class="Question">[2]</p>
+        </div>
+        <div class="sheet">
+            <p class="Question">Which of the following statements is incorrect?</p>
+            <label>
+                <br>
+                <input type="radio" name="answer" value="man" class="an">  int x[] = {1,2,3}
+                <br><br>
+                <input type="radio" name="answer" value="women" class="an"id="true2" onclick="count()">  int x[3] = {1,2,3}
+                <br><br>
+                <input type="radio" name="answer" value="man" class="an">  int[] x = {1,2,3}
+                <br><br>
+                <input type="radio" name="answer" value="women" class="an">  int x[] = new int[]{1,2,3}
+            </label>
+        </div>
+        <div class="next">
+            <button class="button_2"  onclick="jumpHelper4()">Next</button>
+        </div>
+    </div>
+
+    <div id="Q3">
+        <div class="number">
+            <p class="Question">[3]</p>
+        </div>
+        <div class="sheet">
+            <p class="Question">Which of the following GUI components is common in a software installer?</p>
+            <label>
+                <br>
+                <input type="radio" name="answer" value="man" class="an">  slider
+                <br><br>
+                <input type="radio" name="answer" value="women" class="an">  progress bar
+                <br><br>
+                <input type="radio" name="answer" value="man" class="an" id="true3" onclick="count()">  button
+                <br><br>
+                <input type="radio" name="answer" value="women" class="an">  label
+            </label>
+        </div>
+        <div class="next">
+            <button class="button_2" onclick="jumpHelper5()">Next</button>
+        </div>
+    </div>
+
+         <div id="Q4">
+             <div class="number">
+                 <p class="Question">[4]</p>
+             </div>
+             <div class="sheet">
+                 <p class="Question">What does not belong to object-oriented method in the following?</p>
+                 <label>
+                     <br>
+                     <input type="radio" name="answer" value="man" class="an">  Inheritance
+                     <br><br>
+                     <input type="radio" name="answer" value="women" class="an">  polymorphic
+                     <br><br>
+                     <input type="radio" name="answer" value="man" class="an">  Class encapsulation
+                     <br><br>
+                     <input type="radio" name="answer" value="women" class="an" id="true4" onclick="count()">  Procedure call
+                 </label>
+             </div>
+             <div class="next">
+                 <button class="button_2" onclick="jumpHelper6();getTime()">Next</button>
+             </div>
+         </div>
+     </div>
+
+     <div id="Page3">
+         <div id="A1">
+         <div class="number1">
+             <p class="Question">[1]</p>
+         </div>
+         <div class="sheet1">
+             <p class="Question">Which of the following is the correct identifier?</p>
+             <br>
+             <br>
+             <p class="answer">Right Answer: that</p>
+             <br>
+             <br>
+             <p class="analysis" type="text">Analysis: Due to the development of Oak language, still there is no running bytecode hardware platform, so in order to develop can undertake experimental study of the language, when they are on the basis of the existing hardware and software platform, according to the standard of their specified, using software built a platform, the entire system in addition to more simple than c + +</p>
+         </div>
+         <div class="next1">
+             <button class="button_2" onclick="jumpHelper8()" id="next_button1">Next</button>
+             <button class="button_2" onclick="backLibrary()" id="back_button1">Back</button>
+             <button class="save">Save</button>
+         </div>
+             <p class="note1">Note:</p>
+             <textarea class="note"></textarea>
+         </div>
+             <div id="A2">
+                 <div class="number1">
+                     <p class="Question">[2]</p>
+                 </div>
+                 <div class="sheet1">
+                     <p class="Question">Which of the following statements is incorrect?</p>
+                     <br>
+                     <br>
+                     <p class="answer">Right Answer: int x[3] = {1,2,3}</p>
+                     <br>
+                     <br>
+                     <p class="analysis" type="text">Analysis: Java is designed to look a lot like C++, but in order to make the language small and familiar, designers have removed many of the features available in C++ that are rarely used by the average programmer.</p>
+                 </div>
+                 <div class="next1">
+                     <button class="button_2" onclick="jumpHelper9()" id="next_button2">Next</button>
+                     <button class="button_2" onclick="backL_1()" id="back_button2">Back</button>
+                     <button class="save">Save</button>
+                 </div>
+                 <p class="note1">Note:</p>
+                 <textarea class="note"></textarea>
+         </div>
+             <div id="A3">
+                 <div class="number1">
+                     <p class="Question">[3]</p>
+                 </div>
+                 <div class="sheet1">
+                     <p class="Question">Which of the following GUI components is common in a software installer?</p>
+                     <br>
+                     <br>
+                     <p class="answer">Right Answer: button</p>
+                     <br>
+                     <br>
+                     <p class="analysis" type="text">Analysis:  For example, Java does not support go to statements, but instead provides break and continue statements and exception handling. Java also eliminates the C++ operator overload and multiple inheritance features, and does not use a master file, eliminating preprocessors.</p>
+                 </div>
+                 <div class="next1">
+                     <button class="button_2" onclick="jumpHelper10()" id="next_button3">Next</button>
+                     <button class="button_2" onclick="jumpHelper8()" id="back_button3">Back</button>
+                     <button class="save">Save</button>
+                 </div>
+                 <p class="note1">Note:</p>
+                 <textarea class="note"></textarea>
+             </div>
+             <div id="A4">
+                 <div class="number1">
+                     <p class="Question">[4]</p>
+                 </div>
+                 <div class="sheet1">
+                     <p class="Question">What does not belong to object-oriented method in the following?</p>
+                     <br>
+                     <br>
+                     <p class="answer">Right Answer: Procedure call</p>
+                     <br>
+                     <br>
+                     <p class="analysis" type="text">Analysis: Because Java has no structure, arrays and strings are objects, so you don't need Pointers. Java can automatically handle object references and indirect reference still there is no running bytecode hardware platform, so in order to find this problem</p>
+                 </div>
+                 <div class="next1">
+                     <button class="button_2" onclick="backLibrary()" id="next_button4">Finish</button>
+                     <button class="button_2" onclick="jumpHelper9()" id="back_button4">Back</button>
+                     <button class="save">Save</button>
+                 </div>
+                 <p class="note1">Note:</p>
+                 <textarea class="note"></textarea>
+             </div>
+     </div>
+</div>
+
+<script type="text/javascript">
+    document.getElementById('grade').style.display="none";
+    document.getElementById('library').style.display="none";
+    document.getElementById('Page2').style.display="none";
+    document.getElementById('Page3').style.display="none";
+</script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Learning</title>
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/forum.css" type="text/css">
+    <link rel="stylesheet" href="../css/Forumblog.css" type="text/css">
+    <style>
+    </style>
+</head>
+<div class="up">
+    <img class="logo1" src="../img/logo1.png">
+</div>
+
+<div class="navigation">
+    <a href="../html/home.html">Home</a>
+    <a href="../html/Course.html">Course</a>
+    <a href="../html/Forum.html" style="background-color: gray;border-bottom-style: solid;border-bottom-color: black">Forum</a>
+    <a href="../html/Assessment.html">Assessment</a>
+    <a href="../html/Homepage.html">Homepage</a>
+</div>
+
+<div class="content"></div>
+<div class="content1"></div>
+<div class="forum_navigation">
+    <a href="../html/Forum.html">Java Blog</a>
+    <a href="../html/Forum%20Q&A.html">Q&A</a>
+    <a href="../html/Forum%20label.html">Label</a>
+</div>
+
+<div class="search">
+    <input type="text" placeholder="Research..">
+</div>
+
+<div class="forum_link">
+    <a href="Forum%20write.html">Write an article!</a>
+</div>
+<div class="blog1">
+    <label>
+        <p style="font-size: 25px">Popular article
+        <hr size="1px">
+        </p>
+        <a href="../html/forumPopularblog1.html" style="font-size: 15px;color: gray;width: 30%">1. [Java] IdWorker ID generator</a><br>
+        <a href="../html/forumPopularblog2.html" style="font-size: 15px;color: gray;width: 100%">2. Could not initialize class javax.imageio...</a><br>
+
+    </label>
+</div>
+<div class="blog1" style="top:550px">
+    <label>
+        <p style="font-size: 25px">Latest release
+        <hr size="1px">
+        </p>
+        <a href="../html/forumLatestBlog1.html" style="font-size: 15px;color: gray;width: 30%">1. Deep understanding of Java thread pool</a><br>
+        <a href="../html/forumLatestBlog1.html" style="font-size: 15px;color: gray;width: 100%">2. Interpretation of Java concurrent queu...</a><br>
+
+    </label>
+</div>
+<div class="blog2">
+    <label>
+        <h1>
+            Implementation Principle of Java Thread Pool and Its Practice in Meituan Business
+        </h1><br><hr><br>
+        <p style="font-size: 25px">
+            1. Write in front<br>
+            1.1 What is a thread pool
+        </p><br>
+        <p style="font-size: 20px">
+            Thread Pool ( Thread Pool ) is a tool based on the idea of ​​pooling thread management, often appears in multi-threaded servers, such as MySQL.
+
+            Too many threads will bring additional costs, including the cost of creating and destroying threads, the cost of scheduling threads, and so on, while also reducing the overall performance of the computer. The thread pool maintains multiple threads, waiting for the supervisor to allocate tasks that can be executed concurrently. This approach, on the one hand, avoids the cost of creating and destroying threads when processing tasks, on the other hand, it avoids the problem of over-scheduling caused by the expansion of the number of threads, and ensures the full use of the kernel.
+
+            This article describes the thread pool is the ThreadPoolExecutor class provided in the JDK.
+
+            Of course, using a thread pool can bring a series of benefits:<br>
+            Reduce resource consumption : Reuse the created threads through pooling technology to reduce the loss caused by thread creation and destruction.
+            <br>
+            Improve response speed : When a task arrives, it can be executed immediately without waiting for the thread to be created.
+            <br>
+            Improve the manageability of threads: Threads are scarce resources. If they are created without restrictions, they will not only consume system resources, but also cause unbalanced resource scheduling due to the unreasonable distribution of threads, reducing the stability of the system. The use of thread pools enables unified allocation, tuning, and monitoring.
+        </p><br>
+        <p style="font-size: 25px">
+            1.2 What is the problem solved by the thread pool
+        </p><br>
+        <p style="font-size: 20px;">
+            The core problem solved by the thread pool is the resource management problem. In a concurrent environment, the system cannot determine how many tasks need to be performed and how many resources need to be invested at any time. This uncertainty will bring the following problems:
+            <br>
+            Frequent application / destruction of resources and scheduling resources will bring extra consumption and may be very huge.
+
+            1.The lack of restraint means for unlimited application of resources can easily lead to the risk of system resource exhaustion.
+            <br>
+            2.The system cannot reasonably manage the internal resource distribution, which will reduce the stability of the system.
+            <br>
+            3.The lack of restraint means for unlimited application of resources can easily lead to the risk of system resource exhaustion.
+        </p><br>
+
+
+    </label>
+
+
+</div>
+</html>

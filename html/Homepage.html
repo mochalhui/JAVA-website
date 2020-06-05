@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage/Java Learning</title>
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/Homepage.css" type="text/css">
+    <script type="text/javascript" src="../js/Homepage.js"></script>
+    <link rel="stylesheet" href="../../java learninggggg/java learning/css/Assessment.css">
+</head>
+<body>
+<div class="up">
+    <img class="logo1" src="../img/logo1.png">
+</div>
+    <div class="navigation">
+        <a href="../html/home.html">Home</a>
+        <a href="../html/Course.html">Course</a>
+        <a href="../html/Forum.html">Forum</a>
+        <a href="../html/Assessment.html">Assessment</a>
+        <a style="background-color: gray;border-bottom-style: solid;border-bottom-color: black" href="../html/Homepage.html">Homepage</a>
+    </div>
+    <div class="content">
+        <!-- sidebar of homepage --->
+        <div class="sidebar">
+            <ul>
+                <li class="select_sidebar" style="background-color: gray;border-left: black solid"><a href="#personal_information">Personal Information</a></li>
+                <li class="select_sidebar"><a href="#ability_level">Ability Level</a></li>
+                <li class="select_sidebar"><a href="#collection">Collection</a></li>
+                <li class="select_sidebar"><a href="#history">History</a></li>
+                <li class="select_sidebar"><a href="#feedback">Feedback</a></li>
+                <li class="select_sidebar"><a href="#individual_recommendation">Individual Recommendation</a></li>
+            </ul>
+        </div>
+        <div class="right_content">
+            <!-- personal information -->
+            <div class="change_content" id="personal_information">
+                <table>
+                    <!-- username information -->
+                    <td rowspan="4"><img src="../img/1.png"> </td>
+                    <tr>
+                        <td></td>
+                        <td>Username:</td>
+                        <td><input class="input_text" type="text" name="username" maxlength="10" value="Jackson Wang"></td>
+                        <td></td>
+                    </tr>
+                    <!-- password information -->
+                    <tr>
+                        <td></td>
+                        <td>Password:</td>
+                        <td><input class="input_text" type="password" name="pwd" maxlength="12" value="wangjiaer940328"></td>
+                        <td><button id="pwd_change">Change Password</button></td>
+                    </tr>
+                    <!-- gender information -->
+                    <tr>
+                        <td></td>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" checked="checked" id="male"> <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <!-- age information -->
+                    <tr>
+                        <input type="file" id="change_photo" style="display:none">
+                        <td><button onclick="document.getElementById('change_photo').click();">Change Photo</button></td>
+                        <td></td>
+                        <td>Age:</td>
+                        <td>
+                            <select class="input_text">
+                                <option>--selected--</option>
+                                <option>under 18</option>
+                                <option>18-22</option>
+                                <option selected="selected">23-30</option>
+                                <option>31-60</option>
+                                <option>above 60</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <!-- qq number information -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>QQ:</td>
+                        <td><input class="input_text" type="text" name="qq"></td>
+                        <td></td>
+                    </tr>
+                    <!-- telephone number information -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Tele:</td>
+                        <td><input class="input_text" type="text" name="tele"></td>
+                        <td></td>
+                    </tr>
+                    <!-- e-mail information -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>E-mail:</td>
+                        <td><input class="input_text" type="text" name="email" value="TeamWang2017@sina.com"></td>
+                        <td></td>
+                    </tr>
+                    <!-- user type information -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>User Type:</td>
+                        <td>
+                            <select class="input_text">
+                                <option>--selected--</option>
+                                <option>Greenhand</option>
+                                <option>Learner</option>
+                                <option>Advanced Programmer</option>
+                                <option>Others</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <!-- education background information -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Educational Background:</td>
+                        <td>
+                            <select class="input_text">
+                                <option>--selected--</option>
+                                <option>Preschool Children</option>
+                                <option>Pupil</option>
+                                <option>Junior High School Student</option>
+                                <option>Senior High School Student</option>
+                                <option>Undergraduate</option>
+                                <option>Postgraduate</option>
+                                <option>Ph.D</option>
+                                <option>Others</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <!-- buttons for saving or canceling changes -->
+                    <tr>
+                        <td><button id="save">Confirm</button></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button>Cancel</button></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ability level -->
+            <div class="change_content" id="ability_level">
+                <table>
+                    <tr>
+                        <td>Chapter</td>
+                        <td>The number of tests</td>
+                        <td>Time-consuming（min)</td>
+                        <td>Grade(total 100)</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- collection -->
+            <div class="change_content" id="collection">
+                <ul>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java basic syntax</a>
+                    </li>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java OO</a></li>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java String</a></li>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java Override</a>
+                    </li>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java Math</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- history -->
+            <div class="change_content" id="history">
+                <ul>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java Gui</a>
+                    </li>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java basic syntax</a>
+                    </li>
+                    <li>
+                        <video controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                        <a href="">Java Override</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- feedback -->
+            <div class="change_content" id="feedback">
+                <div id="navi_feedback">
+                    <span class="navi_feedback" style="background-color: gray; border-bottom: black solid">Suggestion for Course Content</span>
+                    <span class="navi_feedback">Complaint about Website</span>
+                </div>
+                <div id="content_feedback">
+                    <div class="content_feedback" id="content_feedback1">
+                        <h2>Please tell us if you have any suggestion for our course content:</h2>
+                        <br>
+                        <textarea></textarea>
+                        <div align="center"><button class="submit">Submit</button></div>
+                    </div>
+                    <div class="content_feedback" id="content_feedback2">
+                        <h2>Please tell us if you have any complaint about our website:</h2>
+                        <br>
+                        <textarea></textarea>
+                        <div align="center"><button class="submit">Submit</button></div>
+                    </div>
+                </div>
+            </div>
+            <!-- individual recommendation -->
+            <div class="change_content" id="individual_recommendation">
+                <div id="navi_individual_recommendation">
+                    <span class="navi_individual_recommendation" style="background-color: gray; border-bottom: black solid">Ability Assessment</span>
+                    <span class="navi_individual_recommendation">User Type</span>
+                </div>
+                <div id="content_individual_recommendation">
+                    <ul class="content_individual_recommendation" id="content_individual_recommendation1">
+                        <li>
+                            <video controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <a href="">Java Math</a>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <a href="">Java Switch case</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="content_individual_recommendation" id="content_individual_recommendation2">
+                        <li>
+                            <video controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <a href="">Java String</a>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <a href="">Java Scanner</a>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <a href="">Java OO</a>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <a href="">Java Gui</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        var pwd_change=document.getElementById('pwd_change');
+        pwd_change.onclick=function(){
+            var oldPwd=prompt('Please input your original password:');
+            var newPwd=prompt('Please set your new password:');
+            var result=alert('Change succeeds!');
+        }
+        var submit=document.getElementsByClassName('submit');
+        submit[0].onclick=function(){
+            alert('Submit succeeds!Thank you for your letter!');
+        }
+        submit[1].onclick=function(){
+            alert('Submit succeeds!Thank you for your letter!');
+        }
+        var save=document.getElementById('save');
+        save.onclick=function(){
+            var result=alert('Update information succeeds!');
+        }
+
+        var sidebar=document.querySelectorAll('.select_sidebar');
+        var change_content=document.querySelectorAll('.change_content');
+        var navi_feedback=document.querySelectorAll('.navi_feedback');
+        var content_feedback=document.querySelectorAll('.content_feedback');
+        var navi_individual_recommendation=document.querySelectorAll('.navi_individual_recommendation');
+        var content_individual_recommendation=document.querySelectorAll('.content_individual_recommendation');
+
+        sidebar[0].onclick=function(){
+            for(var i=0;i<sidebar.length;i++){
+                if(i==0){
+                    sidebar[i].style.backgroundColor='gray';
+                    sidebar[i].style.borderLeft='black solid';
+                    change_content[i].style.display='block';
+                }
+                else{
+                    sidebar[i].style.backgroundColor='#f1f1f1';
+                    change_content[i].style.display='none';
+                    sidebar[i].style.borderLeft='none';
+                }
+            }
+        }
+        sidebar[1].onclick=function(){
+                for(var i=0;i<sidebar.length;i++){
+                    if(i==1){
+                        sidebar[i].style.backgroundColor='gray';
+                        sidebar[i].style.borderLeft='black solid';
+                        change_content[i].style.display='block';
+                    }
+                    else{
+                        sidebar[i].style.backgroundColor='#f1f1f1';
+                        change_content[i].style.display='none';
+                        sidebar[i].style.borderLeft='none';
+                    }
+                }
+            }
+        sidebar[2].onclick=function(){
+            for(var i=0;i<sidebar.length;i++){
+                if(i==2){
+                    sidebar[i].style.backgroundColor='gray';
+                    change_content[i].style.display='block';
+                    sidebar[i].style.borderLeft='black solid';
+                }
+                else{
+                    sidebar[i].style.backgroundColor='#f1f1f1';
+                    change_content[i].style.display='none';
+                    sidebar[i].style.borderLeft='none';
+                }
+            }
+        }
+        sidebar[3].onclick=function(){
+            for(var i=0;i<sidebar.length;i++){
+                if(i==3){
+                    sidebar[i].style.backgroundColor='gray';
+                    change_content[i].style.display='block';
+                    sidebar[i].style.borderLeft='black solid';
+                }
+                else{
+                    sidebar[i].style.backgroundColor='#f1f1f1';
+                    change_content[i].style.display='none';
+                    sidebar[i].style.borderLeft='none';
+                }
+            }
+        }
+        sidebar[4].onclick=function(){
+            for(var i=0;i<sidebar.length;i++){
+                if(i==4){
+                    sidebar[i].style.backgroundColor='gray';
+                    change_content[i].style.display='block';
+                    sidebar[i].style.borderLeft='black solid';
+                }
+                else{
+                    sidebar[i].style.backgroundColor='#f1f1f1';
+                    change_content[i].style.display='none';
+                    sidebar[i].style.borderLeft='none';
+                }
+            }
+
+            navi_feedback[0].onclick=function(){
+                navi_feedback[0].style.backgroundColor='gray';
+                navi_feedback[1].style.backgroundColor='#f1f1f1';
+                content_feedback[0].style.display='block';
+                content_feedback[1].style.display='none';
+                navi_feedback[0].style.borderBottom='black solid';
+                navi_feedback[1].style.borderBottom='none';
+            }
+            navi_feedback[1].onclick=function(){
+                navi_feedback[1].style.backgroundColor='gray';
+                navi_feedback[0].style.backgroundColor='#f1f1f1';
+                content_feedback[1].style.display='block';
+                content_feedback[0].style.display='none';
+                navi_feedback[1].style.borderBottom='black solid';
+                navi_feedback[0].style.borderBottom='none';
+            }
+        }
+        sidebar[5].onclick=function(){
+            for(var i=0;i<sidebar.length;i++){
+                if(i==5){
+                    sidebar[i].style.backgroundColor='gray';
+                    change_content[i].style.display='block';
+                    sidebar[i].style.borderLeft='black solid';
+                }
+                else{
+                    sidebar[i].style.backgroundColor='#f1f1f1';
+                    change_content[i].style.display='none';
+                    sidebar[i].style.borderLeft='none';
+                }
+            }
+
+            navi_individual_recommendation[0].onclick=function(){
+                navi_individual_recommendation[0].style.backgroundColor='gray';
+                navi_individual_recommendation[1].style.backgroundColor='#f1f1f1';
+                content_individual_recommendation[0].style.display='block';
+                content_individual_recommendation[1].style.display='none';
+                navi_individual_recommendation[0].style.borderBottom='black solid';
+                navi_individual_recommendation[1].style.borderBottom='none';
+            }
+            navi_individual_recommendation[1].onclick=function(){
+                navi_individual_recommendation[1].style.backgroundColor='gray';
+                navi_individual_recommendation[0].style.backgroundColor='#f1f1f1';
+                content_individual_recommendation[1].style.display='block';
+                content_individual_recommendation[0].style.display='none';
+                navi_individual_recommendation[1].style.borderBottom='black solid';
+                navi_individual_recommendation[0].style.borderBottom='none';
+            }
+        }
+    </script>
+</body>
+</html>
