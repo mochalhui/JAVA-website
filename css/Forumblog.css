@@ -1,0 +1,22 @@
+.blog2{
+    background-color:white;
+    position: relative;
+    top:220px;
+    left:20px;
+    width:70%;
+    height: 500px;
+    }
+.blog2 h1{
+    font-size: 30px;
+    color: black;
+}
+
+.blog2 a{
+    font-size: 20px;
+    color:black;
+}
+
+.demo p{
+    text-indent:25px;
+    font-size: 20px;
+    background-color: #cccccc}

@@ -1,0 +1,73 @@
+.write input[type=text]{
+    border-radius:5px;
+    border: 2px solid darkgray;
+    position: absolute;
+    height: 30px;
+    width: 700px;
+    top: 220px;
+    left:30px;
+    font-size: 15px;
+}
+.write1 input[type=text]{
+    border-radius:5px;
+    border: 2px solid darkgray;
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    top: 280px;
+    left:30px;
+    font-size: 15px;
+}
+.choose{
+    background-color:white;
+    position: absolute;
+    height:85px;
+    width: 400px;
+    top:380px;
+    right:80px;
+    font-size:20px;
+}
+.sel select{
+    position: absolute;
+    height:30px;
+    width: 400px;
+    top:430px;
+    right:80px;
+    font-size:15px;
+}
+choose a{
+    font-size:15px;
+}
+
+.label{
+    background-color:white;
+    position: absolute;
+    height:85px;
+    width: 400px;
+    top:480px;
+    right:80px;
+    font-size:20px;
+}
+.label a{
+    font-size: 20px;
+}
+.label1 input[type=text]{
+    position: absolute;
+    height: 30px;
+    width:400px;
+    top:530px;
+    right:80px;
+    font-size:15px;
+}
+.release button{
+    border-radius:10px;
+    color: white;
+    background-color:#FE8332;
+    position: absolute;
+    height: 30px;
+    width:200px;
+    top:580px;
+    right:180px;
+    font-size:20px;
+}
+

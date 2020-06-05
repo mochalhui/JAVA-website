@@ -1,0 +1,111 @@
+.forum_navigation{/*navi_domain*/
+    background-color:#f1f1f1;
+    position: absolute;
+    width:400px;
+    height:30px;
+    top:175px;
+    left: 30px;
+    border-bottom-style: solid;
+    border-bottom-color:#f1f1f1 ;
+    display: table;
+}
+
+.forum_navigation a{/* initial style*/
+    position: relative;
+    display: inline-block;
+    width:30%;
+    line-height: 30px;
+    text-align: center;
+    color:black;
+    display: table-cell;
+}
+.forum_navigation a:hover{
+    color:black;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+.search input{
+    border-radius:5px;
+    border: 2px solid darkgray;
+    position: absolute;
+    height: 30px;
+    width: 280px;
+    top: 175px;
+    right: 10px;
+    font-size: 15px;
+}
+.forum_link {
+    position: absolute;
+    height:30px;
+    top:185px;
+    right:300px;
+}
+.forum_link a:link {
+    text-decoration:none;
+    font-family:"Times New Roman";
+    color:skyblue;
+    font-size:18px;
+}    /* unvisited link */
+.forum_link a:visited {text-decoration:none;} /* visited link */
+.forum_link a:hover {text-decoration:underline;color:blue;}   /* mouse over link */
+.forum_link a:active {text-decoration:underline;}  /* selected link */
+
+.blog ul{
+    position: relative;
+    top: 220px;
+    left:0px;
+}
+.blog h1:link{
+    text-decoration:none;
+    color:black;
+    font-size:30px;
+}
+.blog h1:hover {text-decoration:underline;color:blue;}
+.blog li{
+    background-color:white;
+    position: relative;
+    height:150px;
+    list-style-type:none;
+    width:70%;
+    top:0px;
+    left:20px;
+}
+
+.blog img {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+.blog label {
+    position: relative;
+    left:0px;
+}
+
+.blog1{
+    background-color: white;
+    position: absolute;
+    border: 0;
+    width:25%;
+    right: 20px;
+    top:220px;
+    height: 320px;
+
+}
+.blog1 a:link{
+    text-decoration:none;
+    color:gray;
+    font-size:15px;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+
+}
+.blog1 a:hover {text-decoration:underline;color:black;}
+.blog1 label {
+    position: relative;
+    left: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
